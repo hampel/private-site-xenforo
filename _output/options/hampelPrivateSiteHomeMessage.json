@@ -1,0 +1,12 @@
+{
+    "edit_format": "textbox",
+    "edit_format_params": "rows=3",
+    "data_type": "string",
+    "sub_options": [],
+    "validation_class": "",
+    "validation_method": "",
+    "default_value": "This site is private. To request access, please <a href=\"register\">register</a> an account, or <a href=\"login\">Log in</a> if you already have an account.",
+    "relations": {
+        "hampelPrivateSite": 1
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "option.hampelPrivateSiteHomeMessage.txt": {
+        "global_cache": false,
+        "version_id": 1000011,
+        "version_string": "1.0.0 Alpha 1",
+        "hash": "04782bf6313728409d0acfa7fd74258f"
+    },
+    "option_explain.hampelPrivateSiteHomeMessage.txt": {
+        "global_cache": false,
+        "version_id": 1000011,
+        "version_string": "1.0.0 Alpha 1",
+        "hash": "75641c0e1b182a187433e05fc035d5f6"
+    },
+    "option_group.hampelPrivateSite.txt": {
+        "global_cache": false,
+        "version_id": 1000011,
+        "version_string": "1.0.0 Alpha 1",
+        "hash": "c9fb00b0629f5ce04cd17c08d88ee1e0"
+    },
+    "option_group_description.hampelPrivateSite.txt": {
+        "global_cache": false,
+        "version_id": 1000011,
+        "version_string": "1.0.0 Alpha 1",
+        "hash": "b4543ecf72d6ebdbb03f2cf8f37fab01"
+    }
+}

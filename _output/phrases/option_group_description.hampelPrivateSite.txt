@@ -1,0 +1,1 @@
+Hide unnecessary features from guests on a private site
