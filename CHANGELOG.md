@@ -1,6 +1,11 @@
 CHANGELOG
 =========
 
+1.2.0 (2024-08-24)
+------------------
+
+* XF 2.3 compatibility for hiding what's new icon on mobile devices
+
 1.1.0 (2021-01-13)
 ------------------
 
