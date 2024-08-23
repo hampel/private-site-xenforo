@@ -1,11 +1,9 @@
-Private Site for XenForo 2.1
+Private Site for XenForo 2.x
 ============================
 
-This XenForo 2.1 addon lets you hide unnecessary features from guests on a private site
+This XenForo 2.x addon lets you hide unnecessary features from guests on a private site
 
 By [Simon Hampel](https://xenforo.com/community/members/sim.4264/).
 
-Requirements
-------------
-
-This addon has been tested on XenForo 2.1
+* [Addon: Private Site](https://xenforo.com/community/resources/private-site.7845/)
+* [Discussion and support: Private Site](https://xenforo.com/community/threads/private-site.181304/)
