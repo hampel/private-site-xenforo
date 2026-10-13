@@ -5,8 +5,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 Private Site is a XenForo add-on (`Hampel/PrivateSite`, requires XF 2.2.0+) that hides features a
 guest has no use for on a forum that is closed to the public. The repository root is the add-on
 directory, `src/addons/Hampel/PrivateSite/` inside a XenForo install. It has no Composer
-dependencies, no class extensions, no listeners and no test suite — **the whole of what it does is
-three template modifications and one option**, all under `_output/`. Its only PHP is `Setup.php`.
+dependencies, no class extensions and no test suite — **the whole of what it does is three template
+modifications and one option**, all under `_output/`. Its only PHP is `Setup.php` and a one-method
+`Listener.php`.
 
 ## Three template modifications are the whole behaviour
 
@@ -51,6 +52,15 @@ method does not exist on `AbstractSetup` before XF 2.3, and the add-on still sup
 unguarded call is a fatal on upgrade for anyone on 2.2. Keep the guard for as long as
 `addon.json` `require` allows a version below 2.3. Install, upgrade and uninstall steps are empty:
 the add-on owns no schema.
+
+## `Listener.php` declares the add-on's secrets, and there are none
+
+**`Listener::adminApiRedaction()` answers the `hampel_admin_api_redaction` code event with an empty
+list.** The event belongs to a separate add-on that reports a forum's settings with secrets
+removed, and it shows an add-on's text options only once that add-on has said which are secrets.
+The home message is not one. The add-on does not require the other: an event nothing defines is
+never fired, so add nothing to `addon.json` `require`. **Adding, renaming or removing an option
+means revisiting the list in the same commit.**
 
 ## Commands
 
