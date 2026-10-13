@@ -70,7 +70,6 @@ to it works from this directory too.
 ```bash
 php cmd.php xf-dev:import --addon=Hampel/PrivateSite     # after hand-editing _output/
 php cmd.php xf-addon:export Hampel/PrivateSite           # DB -> _data/*.xml, this add-on only
-php cmd.php xf-dev:lint-templates --addon=Hampel/PrivateSite
 php cmd.php xf:addon-upgrade Hampel/PrivateSite          # after a version bump
 php cmd.php xf-addon:build-release Hampel/PrivateSite    # release zip into _releases/
 ```
@@ -84,9 +83,10 @@ development mode on, saving there rewrites the `_output/` file. The `replace` st
 literal tabs and newlines, and the regex is escaped twice over once it is inside JSON.
 `_output/option_hint.php` is generated; do not edit it.
 
-There is no test suite and no linter beyond `xf-dev:lint-templates`. Verification is the apply
-counts above and looking at the forum home page as a guest, as an unconfirmed member and as a
-valid member. `TESTING.md` is the place for that checklist and is currently an empty skeleton.
+There is no test suite, and `xf-dev:lint-templates` has nothing to lint: the add-on has
+modifications and no templates of its own. **`TESTING.md` holds the checks**: the apply counts, a
+query against the modification log, and the forum home page viewed as a guest, as an unconfirmed
+member and as a valid member. Keep its *Surfaces* table in step with `_output/`.
 
 ## Packaging
 
