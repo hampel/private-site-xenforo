@@ -1,6 +1,11 @@
 CHANGELOG
 =========
 
+1.2.2 (unreleased)
+------------------
+
+* now requires XenForo 2.2.0 or later; 1.2.0 remains the last release for XenForo 2.1
+
 1.2.1 (2025-12-12)
 ------------------
 

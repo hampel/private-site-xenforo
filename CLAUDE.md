@@ -2,7 +2,7 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
-Private Site is a XenForo add-on (`Hampel/PrivateSite`, requires XF 2.1.0+) that hides features a
+Private Site is a XenForo add-on (`Hampel/PrivateSite`, requires XF 2.2.0+) that hides features a
 guest has no use for on a forum that is closed to the public. The repository root is the add-on
 directory, `src/addons/Hampel/PrivateSite/` inside a XenForo install. It has no Composer
 dependencies, no class extensions, no listeners and no test suite — **the whole of what it does is
@@ -47,8 +47,8 @@ is not rendered for a logged-in visitor rather than appearing empty.
 ## `Setup.php` guards one call by XF version
 
 **`postUpgrade()` calls `enqueuePostUpgradeCleanUp()` only when `\XF::$versionId >= 2030000`.** The
-method does not exist on `AbstractSetup` before XF 2.3, and the add-on still supports 2.1, so an
-unguarded call is a fatal on upgrade for anyone on 2.1 or 2.2. Keep the guard for as long as
+method does not exist on `AbstractSetup` before XF 2.3, and the add-on still supports 2.2, so an
+unguarded call is a fatal on upgrade for anyone on 2.2. Keep the guard for as long as
 `addon.json` `require` allows a version below 2.3. Install, upgrade and uninstall steps are empty:
 the add-on owns no schema.
 
