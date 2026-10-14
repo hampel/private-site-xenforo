@@ -3,6 +3,8 @@
 ## 1.2.2 (unreleased)
 
 - now requires XenForo 2.2.0 or later; 1.2.0 remains the last release for XenForo 2.1
+- declares the add-on's settings to the Admin API add-on, where that is installed, so the home
+  message can be read through it
 
 ## 1.2.1 (2025-12-12)
 

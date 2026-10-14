@@ -14,7 +14,7 @@ modifications and one option**, all under `_output/`. Its only PHP is `Setup.php
 | modification | template | what it does |
 |---|---|---|
 | `hampelPrivateSiteForumOverviewWrapper` | `forum_overview_wrapper` | shows the home message to guests, above the `forum_overview_top` ad position |
-| `hampelPrivateSitePageForumOverviewWrapper` | `forum_overview_wrapper` | puts a condition on `<xf:pageaction>`, hiding the *New posts* button |
+| `hampelPrivateSitePageForumOverviewWrapper` | `forum_overview_wrapper` | puts a condition on `<xf:pageaction>`, hiding every button in it: *New posts* and *Post thread* |
 | `hampelPrivateSitePageContainerWhatsNew` | `PAGE_CONTAINER` | wraps the *What's new* link in a condition |
 
 **The first two keys differ by one word and are easy to confuse** — the one with `Page` in it is

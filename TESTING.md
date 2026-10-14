@@ -11,7 +11,7 @@ looking at a forum.
 | modification | template | what it does |
 |---|---|---|
 | `hampelPrivateSiteForumOverviewWrapper` | `forum_overview_wrapper` | adds the home message above the `forum_overview_top` ad position, for guests only |
-| `hampelPrivateSitePageForumOverviewWrapper` | `forum_overview_wrapper` | puts a condition on `<xf:pageaction>`, hiding the *New posts* button |
+| `hampelPrivateSitePageForumOverviewWrapper` | `forum_overview_wrapper` | puts a condition on `<xf:pageaction>`, hiding every button in it: *New posts* and *Post thread* |
 | `hampelPrivateSitePageContainerWhatsNew` | `PAGE_CONTAINER` | wraps the *What's new* link in a condition |
 
 The button and the link are shown only to a logged-in member whose `user_state` is `valid`. The
