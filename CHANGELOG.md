@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## 1.2.2 (unreleased)
+## 1.3.0 (2026-10-14)
 
 - now requires XenForo 2.2.0 or later; 1.2.0 remains the last release for XenForo 2.1
 - declares the add-on's settings to the Admin API add-on, where that is installed, so the home
@@ -8,7 +8,7 @@
 
 ## 1.2.1 (2025-12-12)
 
-- run enqueuePostUpgradeCleanUp during upgrades if we're running XF2.3+
+- run `enqueuePostUpgradeCleanUp()` during upgrades if we're running XF2.3+
 
 ## 1.2.0 (2024-08-24)
 
