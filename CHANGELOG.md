@@ -1,32 +1,25 @@
-CHANGELOG
-=========
+# CHANGELOG
 
-1.2.2 (unreleased)
-------------------
+## 1.2.2 (unreleased)
 
-* now requires XenForo 2.2.0 or later; 1.2.0 remains the last release for XenForo 2.1
+- now requires XenForo 2.2.0 or later; 1.2.0 remains the last release for XenForo 2.1
 
-1.2.1 (2025-12-12)
-------------------
+## 1.2.1 (2025-12-12)
 
-* run enqueuePostUpgradeCleanUp during upgrades if we're running XF2.3+
+- run enqueuePostUpgradeCleanUp during upgrades if we're running XF2.3+
 
-1.2.0 (2024-08-24)
-------------------
+## 1.2.0 (2024-08-24)
 
-* XF 2.3 compatibility for hiding what's new icon on mobile devices
+- XF 2.3 compatibility for hiding what's new icon on mobile devices
 
-1.1.0 (2021-01-13)
-------------------
+## 1.1.0 (2021-01-13)
 
-* also hide what's new button from anyone without a user_state of 'valid'
+- also hide what's new button from anyone without a user_state of 'valid'
 
-1.0.1 (2020-06-05)
-------------------
+## 1.0.1 (2020-06-05)
 
-* minor typo in default value for home message
+- minor typo in default value for home message
 
-1.0.0 (2020-06-03)
-------------------
+## 1.0.0 (2020-06-03)
 
-* first release
+- first release
