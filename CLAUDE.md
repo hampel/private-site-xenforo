@@ -62,6 +62,23 @@ The home message is not one. The add-on does not require the other: an event not
 never fired, so add nothing to `addon.json` `require`. **Adding, renaming or removing an option
 means revisiting the list in the same commit.**
 
+## No CLI commands and no test suite, deliberately
+
+**The add-on has no `private-site:config` or `private-site:validate` command, because it has
+nothing to say that XenForo does not already show.** Its one option is a message printed on the
+forum home page, so a wrong value is visible at once. Nothing runs unattended: there is no cron
+entry, no job and no outbound call. The one thing that fails quietly, a modification that no longer
+matches, is counted as not found in the admin control panel. A command would restate that page and
+take a line in `cmd.php list` on every forum to do it.
+
+**It has no PHPUnit suite, because there is no logic to test.** Whether each `find` string still
+matches is a fact about a XenForo release, not about this code, and `TESTING.md` holds the checks
+for it. The one thing a suite would guard is the secrets declaration going stale, and the rule in
+the section above covers that for a single option.
+
+**Either decision is reopened by the add-on gaining what it lacks today:** a second option or a
+`config.php` key, a cron entry or job, anything that calls out, or code with branches in it.
+
 ## Commands
 
 Run from the XenForo install root; `cmd.php` resolves the install from its own location, so a path
@@ -83,10 +100,10 @@ development mode on, saving there rewrites the `_output/` file. The `replace` st
 literal tabs and newlines, and the regex is escaped twice over once it is inside JSON.
 `_output/option_hint.php` is generated; do not edit it.
 
-There is no test suite, and `xf-dev:lint-templates` has nothing to lint: the add-on has
-modifications and no templates of its own. **`TESTING.md` holds the checks**: the apply counts, a
-query against the modification log, and the forum home page viewed as a guest, as an unconfirmed
-member and as a valid member. Keep its *Surfaces* table in step with `_output/`.
+`xf-dev:lint-templates` has nothing to lint: the add-on has modifications and no templates of its
+own. **`TESTING.md` holds the checks**: the apply counts, a query against the modification log, and
+the forum home page viewed as a guest, as an unconfirmed member and as a valid member. Keep its
+*Surfaces* table in step with `_output/`.
 
 ## Packaging
 
